@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F07A206057CB00676DB9 /* AppDelegate.swift */; };
-		9400F07D206057CB00676DB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F07C206057CB00676DB9 /* ViewController.swift */; };
-		9400F080206057CB00676DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F07E206057CB00676DB9 /* Main.storyboard */; };
+		9400F080206057CB00676DB9 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F07E206057CB00676DB9 /* TabBar.storyboard */; };
 		9400F082206057CB00676DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9400F081206057CB00676DB9 /* Assets.xcassets */; };
 		9400F085206057CB00676DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F083206057CB00676DB9 /* LaunchScreen.storyboard */; };
+		9400F08D2064626800676DB9 /* MyHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F08C2064626800676DB9 /* MyHome.storyboard */; };
+		9400F08F2064628400676DB9 /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F08E2064628400676DB9 /* Learn.storyboard */; };
+		9400F0912064629200676DB9 /* SavedContractors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F0902064629200676DB9 /* SavedContractors.storyboard */; };
+		9400F0932064641A00676DB9 /* AvailableContractors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F0922064641A00676DB9 /* AvailableContractors.storyboard */; };
+		9400F0952064679700676DB9 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F0942064679700676DB9 /* LearnViewController.swift */; };
+		9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */; };
+		9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9400F077206057CB00676DB9 /* Greenify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greenify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9400F07A206057CB00676DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9400F07C206057CB00676DB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9400F07F206057CB00676DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9400F07F206057CB00676DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		9400F081206057CB00676DB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9400F084206057CB00676DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9400F086206057CB00676DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9400F08C2064626800676DB9 /* MyHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyHome.storyboard; sourceTree = "<group>"; };
+		9400F08E2064628400676DB9 /* Learn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
+		9400F0902064629200676DB9 /* SavedContractors.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedContractors.storyboard; sourceTree = "<group>"; };
+		9400F0922064641A00676DB9 /* AvailableContractors.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AvailableContractors.storyboard; sourceTree = "<group>"; };
+		9400F0942064679700676DB9 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedContractorsViewController.swift; sourceTree = "<group>"; };
+		9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableContractorsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,59 @@
 			isa = PBXGroup;
 			children = (
 				9400F07A206057CB00676DB9 /* AppDelegate.swift */,
-				9400F07C206057CB00676DB9 /* ViewController.swift */,
-				9400F07E206057CB00676DB9 /* Main.storyboard */,
+				9400F09E2064697800676DB9 /* Tab Bar */,
 				9400F081206057CB00676DB9 /* Assets.xcassets */,
 				9400F083206057CB00676DB9 /* LaunchScreen.storyboard */,
 				9400F086206057CB00676DB9 /* Info.plist */,
+				9400F09D2064696F00676DB9 /* My Home */,
+				9400F099206467C000676DB9 /* Learn */,
+				9400F098206467B600676DB9 /* Saved Contractors */,
+				9400F09A206467C700676DB9 /* Available Contractors */,
 			);
 			path = Greenify;
+			sourceTree = "<group>";
+		};
+		9400F098206467B600676DB9 /* Saved Contractors */ = {
+			isa = PBXGroup;
+			children = (
+				9400F0902064629200676DB9 /* SavedContractors.storyboard */,
+				9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */,
+			);
+			path = "Saved Contractors";
+			sourceTree = "<group>";
+		};
+		9400F099206467C000676DB9 /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				9400F08E2064628400676DB9 /* Learn.storyboard */,
+				9400F0942064679700676DB9 /* LearnViewController.swift */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		9400F09A206467C700676DB9 /* Available Contractors */ = {
+			isa = PBXGroup;
+			children = (
+				9400F0922064641A00676DB9 /* AvailableContractors.storyboard */,
+				9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */,
+			);
+			path = "Available Contractors";
+			sourceTree = "<group>";
+		};
+		9400F09D2064696F00676DB9 /* My Home */ = {
+			isa = PBXGroup;
+			children = (
+				9400F08C2064626800676DB9 /* MyHome.storyboard */,
+			);
+			path = "My Home";
+			sourceTree = "<group>";
+		};
+		9400F09E2064697800676DB9 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				9400F07E206057CB00676DB9 /* TabBar.storyboard */,
+			);
+			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +183,11 @@
 			files = (
 				9400F085206057CB00676DB9 /* LaunchScreen.storyboard in Resources */,
 				9400F082206057CB00676DB9 /* Assets.xcassets in Resources */,
-				9400F080206057CB00676DB9 /* Main.storyboard in Resources */,
+				9400F08F2064628400676DB9 /* Learn.storyboard in Resources */,
+				9400F0932064641A00676DB9 /* AvailableContractors.storyboard in Resources */,
+				9400F080206057CB00676DB9 /* TabBar.storyboard in Resources */,
+				9400F08D2064626800676DB9 /* MyHome.storyboard in Resources */,
+				9400F0912064629200676DB9 /* SavedContractors.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,20 +198,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9400F07D206057CB00676DB9 /* ViewController.swift in Sources */,
 				9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */,
+				9400F0952064679700676DB9 /* LearnViewController.swift in Sources */,
+				9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */,
+				9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9400F07E206057CB00676DB9 /* Main.storyboard */ = {
+		9400F07E206057CB00676DB9 /* TabBar.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9400F07F206057CB00676DB9 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TabBar.storyboard;
 			sourceTree = "<group>";
 		};
 		9400F083206057CB00676DB9 /* LaunchScreen.storyboard */ = {

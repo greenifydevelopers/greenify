@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uFe-HW-484">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Learn-->
+        <scene sceneID="r5f-Sj-s8B">
+            <objects>
+                <viewController id="zls-AT-feL" customClass="LearnViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7j4-K2-EbK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sxG-yL-e0i">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="learnTableCell" textLabel="t7h-z2-hrZ" style="IBUITableViewCellStyleDefault" id="Ax3-Ws-F0p">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ax3-Ws-F0p" id="cYF-IH-oI4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Bad furnace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t7h-z2-hrZ">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7qq-2q-gxL" kind="show" id="hZp-Op-8An"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zls-AT-feL" id="Wx1-Th-s80"/>
+                                    <outlet property="delegate" destination="zls-AT-feL" id="It9-7W-KrN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sxG-yL-e0i" firstAttribute="leading" secondItem="pvk-gr-Ct5" secondAttribute="leading" id="8Ec-sX-64w"/>
+                            <constraint firstItem="sxG-yL-e0i" firstAttribute="top" secondItem="pvk-gr-Ct5" secondAttribute="top" id="m9S-rN-NCB"/>
+                            <constraint firstItem="pvk-gr-Ct5" firstAttribute="bottom" secondItem="sxG-yL-e0i" secondAttribute="bottom" id="ovQ-fZ-hhL"/>
+                            <constraint firstItem="pvk-gr-Ct5" firstAttribute="trailing" secondItem="sxG-yL-e0i" secondAttribute="trailing" id="tCf-0n-1Mq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pvk-gr-Ct5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Learn" id="psl-Zw-QP8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6B-3c-bCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="132.68365817091455"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="Gnj-uH-gzU">
+            <objects>
+                <viewController id="7qq-2q-gxL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFu-18-zBT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQC-rR-WQO">
+                                <rect key="frame" x="131" y="326" width="113" height="30"/>
+                                <state key="normal" title="Find contractors"/>
+                                <connections>
+                                    <segue destination="o5L-1x-7AW" kind="show" id="MmK-cW-rY3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SQC-rR-WQO" firstAttribute="centerX" secondItem="HYc-eL-8pC" secondAttribute="centerX" id="6H6-CZ-LuB"/>
+                            <constraint firstItem="SQC-rR-WQO" firstAttribute="centerY" secondItem="HYc-eL-8pC" secondAttribute="centerY" id="wus-xw-TlS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HYc-eL-8pC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Information" id="LSV-NG-WLC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eae-PZ-46e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305" y="133"/>
+        </scene>
+        <!--AvailableContractors-->
+        <scene sceneID="RMu-rY-Ekk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AvailableContractors" id="o5L-1x-7AW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hm6-8S-N41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2085" y="100"/>
+        </scene>
+        <!--Learn-->
+        <scene sceneID="SH1-RE-NZV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uFe-HW-484" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Learn" id="Cp3-2J-PsV"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Vc-cf-MeN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zls-AT-feL" kind="relationship" relationship="rootViewController" id="Lke-60-aiz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOk-G0-kZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="133"/>
+        </scene>
+    </scenes>
+</document>
