@@ -18,6 +18,7 @@
 		9400F0952064679700676DB9 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F0942064679700676DB9 /* LearnViewController.swift */; };
 		9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */; };
 		9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */; };
+		A9BFFADD206C3E2200A67E5D /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BFFADC206C3E2200A67E5D /* Budget.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9400F0942064679700676DB9 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedContractorsViewController.swift; sourceTree = "<group>"; };
 		9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableContractorsViewController.swift; sourceTree = "<group>"; };
+		A9BFFADC206C3E2200A67E5D /* Budget.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				9400F099206467C000676DB9 /* Learn */,
 				9400F098206467B600676DB9 /* Saved Contractors */,
 				9400F09A206467C700676DB9 /* Available Contractors */,
+				A9BFFADE206C3E2D00A67E5D /* Budget */,
 			);
 			path = Greenify;
 			sourceTree = "<group>";
@@ -120,6 +123,14 @@
 				9400F07E206057CB00676DB9 /* TabBar.storyboard */,
 			);
 			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		A9BFFADE206C3E2D00A67E5D /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				A9BFFADC206C3E2200A67E5D /* Budget.storyboard */,
+			);
+			path = Budget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				9400F085206057CB00676DB9 /* LaunchScreen.storyboard in Resources */,
 				9400F082206057CB00676DB9 /* Assets.xcassets in Resources */,
 				9400F08F2064628400676DB9 /* Learn.storyboard in Resources */,
+				A9BFFADD206C3E2200A67E5D /* Budget.storyboard in Resources */,
 				9400F0932064641A00676DB9 /* AvailableContractors.storyboard in Resources */,
 				9400F080206057CB00676DB9 /* TabBar.storyboard in Resources */,
 				9400F08D2064626800676DB9 /* MyHome.storyboard in Resources */,
