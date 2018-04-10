@@ -79,6 +79,7 @@
 				9400F099206467C000676DB9 /* Learn */,
 				9400F098206467B600676DB9 /* Saved Contractors */,
 				9400F09A206467C700676DB9 /* Available Contractors */,
+				A9BFFADE206C3E2D00A67E5D /* Budget */,
 			);
 			path = Greenify;
 			sourceTree = "<group>";
@@ -126,6 +127,14 @@
 				9400F07E206057CB00676DB9 /* TabBar.storyboard */,
 			);
 			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		A9BFFADE206C3E2D00A67E5D /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				A9BFFADC206C3E2200A67E5D /* Budget.storyboard */,
+			);
+			path = Budget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +199,7 @@
 				9400F085206057CB00676DB9 /* LaunchScreen.storyboard in Resources */,
 				9400F082206057CB00676DB9 /* Assets.xcassets in Resources */,
 				9400F08F2064628400676DB9 /* Learn.storyboard in Resources */,
+				A9BFFADD206C3E2200A67E5D /* Budget.storyboard in Resources */,
 				9400F0932064641A00676DB9 /* AvailableContractors.storyboard in Resources */,
 				9400F080206057CB00676DB9 /* TabBar.storyboard in Resources */,
 				9400F08D2064626800676DB9 /* MyHome.storyboard in Resources */,
