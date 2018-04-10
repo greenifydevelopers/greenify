@@ -1,0 +1,34 @@
+ [
+  {
+  "StreetNumber": "12345",
+  "StreetName": "Fake St",
+  "ZipCode": "12345",
+  "City": "Fake City",
+  "State": "Illinois",
+  "StateAbr": "IL"
+  },
+  {
+  "StreetNumber": "1402",
+  "StreetName": "10th ave",
+  "ZipCode": "07753",
+  "City": "Neptune",
+  "State": "New Jersey",
+  "StateAbr": "NJ"
+  },
+  {
+  "StreetNumber": "382",
+  "StreetName": "Callahan Rd",
+  "ZipCode": "12871",
+  "City": "Schuylerville",
+  "State": "New York",
+  "StateAbr": "NY"
+  },
+  {
+  "StreetNumber": "1001",
+  "StreetName": "Diamond St",
+  "ZipCode": "94114",
+  "City": "San Francisco",
+  "State": "California",
+  "StateAbr": "CA"
+  }
+  ]

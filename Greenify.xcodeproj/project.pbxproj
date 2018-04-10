@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B7A53E207D40A1006C1927 /* HomeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7A53D207D40A1006C1927 /* HomeStruct.swift */; };
+		00B7A540207D40C5006C1927 /* Homes.json in Resources */ = {isa = PBXBuildFile; fileRef = 00B7A53F207D40C5006C1927 /* Homes.json */; };
 		9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F07A206057CB00676DB9 /* AppDelegate.swift */; };
 		9400F080206057CB00676DB9 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F07E206057CB00676DB9 /* TabBar.storyboard */; };
 		9400F082206057CB00676DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9400F081206057CB00676DB9 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B7A53D207D40A1006C1927 /* HomeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeStruct.swift; path = ../HomeStruct.swift; sourceTree = "<group>"; };
+		00B7A53F207D40C5006C1927 /* Homes.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = Homes.json; sourceTree = "<group>"; };
 		9400F077206057CB00676DB9 /* Greenify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greenify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9400F07A206057CB00676DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9400F07F206057CB00676DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		9400F079206057CB00676DB9 /* Greenify */ = {
 			isa = PBXGroup;
 			children = (
+				00B7A53D207D40A1006C1927 /* HomeStruct.swift */,
+				00B7A53F207D40C5006C1927 /* Homes.json */,
 				9400F07A206057CB00676DB9 /* AppDelegate.swift */,
 				9400F09E2064697800676DB9 /* Tab Bar */,
 				9400F081206057CB00676DB9 /* Assets.xcassets */,
@@ -199,6 +205,7 @@
 				9400F0932064641A00676DB9 /* AvailableContractors.storyboard in Resources */,
 				9400F080206057CB00676DB9 /* TabBar.storyboard in Resources */,
 				9400F08D2064626800676DB9 /* MyHome.storyboard in Resources */,
+				00B7A540207D40C5006C1927 /* Homes.json in Resources */,
 				9400F0912064629200676DB9 /* SavedContractors.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B7A53E207D40A1006C1927 /* HomeStruct.swift in Sources */,
 				9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */,
 				9400F0952064679700676DB9 /* LearnViewController.swift in Sources */,
 				9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */,
