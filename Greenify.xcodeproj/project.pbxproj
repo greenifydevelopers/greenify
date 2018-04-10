@@ -20,7 +20,8 @@
 		9400F0952064679700676DB9 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F0942064679700676DB9 /* LearnViewController.swift */; };
 		9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */; };
 		9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */; };
-		A9BFFADD206C3E2200A67E5D /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BFFADC206C3E2200A67E5D /* Budget.storyboard */; };
+		94B8400E20758CA40011D911 /* Contractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B8400D20758CA40011D911 /* Contractor.swift */; };
+		94B84012207D51D50011D911 /* ContractorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B84011207D51D50011D911 /* ContractorsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,8 @@
 		9400F0942064679700676DB9 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedContractorsViewController.swift; sourceTree = "<group>"; };
 		9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableContractorsViewController.swift; sourceTree = "<group>"; };
-		A9BFFADC206C3E2200A67E5D /* Budget.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
+		94B8400D20758CA40011D911 /* Contractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contractor.swift; sourceTree = "<group>"; };
+		94B84011207D51D50011D911 /* ContractorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractorsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +111,10 @@
 		9400F09A206467C700676DB9 /* Available Contractors */ = {
 			isa = PBXGroup;
 			children = (
+				94B8400D20758CA40011D911 /* Contractor.swift */,
 				9400F0922064641A00676DB9 /* AvailableContractors.storyboard */,
 				9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */,
+				94B84011207D51D50011D911 /* ContractorsService.swift */,
 			);
 			path = "Available Contractors";
 			sourceTree = "<group>";
@@ -220,6 +224,7 @@
 				00B7A53E207D40A1006C1927 /* HomeStruct.swift in Sources */,
 				9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */,
 				9400F0952064679700676DB9 /* LearnViewController.swift in Sources */,
+				94B84012207D51D50011D911 /* ContractorsService.swift in Sources */,
 				9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */,
 				9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */,
 			);
