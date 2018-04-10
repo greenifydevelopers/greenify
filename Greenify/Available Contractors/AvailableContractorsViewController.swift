@@ -11,17 +11,19 @@ import UIKit
 class AvailableContractorsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    let contractorsService = ContractorsService()
+    var contractors = [Contractor]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        contractors = contractorsService.fetch()
     }
 }
 
 extension AvailableContractorsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return contractors.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,7 +33,8 @@ extension AvailableContractorsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "availableContractorsTableCell", for: indexPath)
         
-        cell.textLabel?.text = "John Smith"
+        cell.textLabel?.text = contractors[indexPath.row].company_name
+        cell.detailTextLabel?.text = contractors[indexPath.row].email
         
         return cell
     }
