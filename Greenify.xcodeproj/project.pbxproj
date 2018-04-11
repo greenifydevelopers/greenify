@@ -18,6 +18,10 @@
 		9400F0952064679700676DB9 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F0942064679700676DB9 /* LearnViewController.swift */; };
 		9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */; };
 		9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */; };
+		A96F4A40207C041800F820B2 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A3F207C041800F820B2 /* MyHomeViewController.swift */; };
+		A96F4A42207C058100F820B2 /* MainRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A41207C058100F820B2 /* MainRatingView.swift */; };
+		A96F4A44207C0E9E00F820B2 /* WaterRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A43207C0E9E00F820B2 /* WaterRatingView.swift */; };
+		A96F4A46207C0EAD00F820B2 /* EnergyRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A45207C0EAD00F820B2 /* EnergyRatingView.swift */; };
 		A9BFFADD206C3E2200A67E5D /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BFFADC206C3E2200A67E5D /* Budget.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,10 @@
 		9400F0942064679700676DB9 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		9400F096206467AE00676DB9 /* SavedContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedContractorsViewController.swift; sourceTree = "<group>"; };
 		9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableContractorsViewController.swift; sourceTree = "<group>"; };
+		A96F4A3F207C041800F820B2 /* MyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
+		A96F4A41207C058100F820B2 /* MainRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRatingView.swift; sourceTree = "<group>"; };
+		A96F4A43207C0E9E00F820B2 /* WaterRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRatingView.swift; sourceTree = "<group>"; };
+		A96F4A45207C0EAD00F820B2 /* EnergyRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyRatingView.swift; sourceTree = "<group>"; };
 		A9BFFADC206C3E2200A67E5D /* Budget.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				9400F08C2064626800676DB9 /* MyHome.storyboard */,
+				A96F4A3F207C041800F820B2 /* MyHomeViewController.swift */,
+				A96F4A41207C058100F820B2 /* MainRatingView.swift */,
+				A96F4A43207C0E9E00F820B2 /* WaterRatingView.swift */,
+				A96F4A45207C0EAD00F820B2 /* EnergyRatingView.swift */,
 			);
 			path = "My Home";
 			sourceTree = "<group>";
@@ -210,9 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96F4A44207C0E9E00F820B2 /* WaterRatingView.swift in Sources */,
+				A96F4A42207C058100F820B2 /* MainRatingView.swift in Sources */,
 				9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */,
+				A96F4A46207C0EAD00F820B2 /* EnergyRatingView.swift in Sources */,
 				9400F0952064679700676DB9 /* LearnViewController.swift in Sources */,
 				9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */,
+				A96F4A40207C041800F820B2 /* MyHomeViewController.swift in Sources */,
 				9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
