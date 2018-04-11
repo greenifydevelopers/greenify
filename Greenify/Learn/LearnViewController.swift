@@ -12,7 +12,9 @@ class LearnViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var array: [HomeStruct]
+        array = loadJson()
+        print(array[0].getFullAddress())
         // Do any additional setup after loading the view.
     }
 }

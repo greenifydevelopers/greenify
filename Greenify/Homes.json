@@ -5,7 +5,21 @@
   "ZipCode": "12345",
   "City": "Fake City",
   "State": "Illinois",
-  "StateAbr": "IL"
+  "StateAbr": "IL",
+  "HeatingRating": 2
+  "CoolingRating": 3
+  "WaterHeaterRating": 1
+  "LightingRating": 3
+  "Washer_DryerRating": 1
+  "OtherEnergyRating": 1
+  "FridgeRating": 3
+  "OvenRating": 2
+  "ShowerRating": 1
+  "ToiletsRating": 3
+  "Faucets_SinksRating": 1
+  "WasherRating": 2
+  "LeakRating": 2
+  "OtherWaterRating": 2
   },
   {
   "StreetNumber": "1402",
@@ -14,6 +28,20 @@
   "City": "Neptune",
   "State": "New Jersey",
   "StateAbr": "NJ"
+  "HeatingRating": 2
+  "CoolingRating": 1
+  "WaterHeaterRating": 1
+  "LightingRating": 2
+  "Washer_DryerRating": 1
+  "OtherEnergyRating": 1
+  "FridgeRating": 2
+  "OvenRating": 2
+  "ShowerRating": 1
+  "ToiletsRating": 3
+  "Faucets_SinksRating": 2
+  "WasherRating": 3
+  "LeakRating": 2
+  "OtherWaterRating": 3
   },
   {
   "StreetNumber": "382",
@@ -22,6 +50,20 @@
   "City": "Schuylerville",
   "State": "New York",
   "StateAbr": "NY"
+  "HeatingRating": 3
+  "CoolingRating": 3
+  "WaterHeaterRating": 1
+  "LightingRating": 3
+  "Washer_DryerRating": 1
+  "OtherEnergyRating": 1
+  "FridgeRating": 2
+  "OvenRating": 2
+  "ShowerRating": 1
+  "ToiletsRating": 3
+  "Faucets_SinksRating": 2
+  "WasherRating": 2
+  "LeakRating": 1
+  "OtherWaterRating": 2
   },
   {
   "StreetNumber": "1001",
@@ -30,5 +72,19 @@
   "City": "San Francisco",
   "State": "California",
   "StateAbr": "CA"
+  "HeatingRating": 2
+  "CoolingRating": 1
+  "WaterHeaterRating": 1
+  "LightingRating": 3
+  "Washer_DryerRating": 1
+  "OtherEnergyRating": 1
+  "FridgeRating": 1
+  "OvenRating": 2
+  "ShowerRating": 1
+  "ToiletsRating": 1
+  "Faucets_SinksRating": 1
+  "WasherRating": 2
+  "LeakRating": 2
+  "OtherWaterRating": 2
   }
   ]
