@@ -45,6 +45,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="R14-ic-PUS" kind="show" identifier="showContractorDetail" id="GCS-ab-hg9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -69,6 +72,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQF-1a-TTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="143" y="122"/>
+        </scene>
+        <!--ContractorDetail-->
+        <scene sceneID="esY-Vh-afC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContractorDetail" id="R14-ic-PUS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YgM-t6-2CZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="48"/>
         </scene>
     </scenes>
 </document>

@@ -11,10 +11,8 @@ import Foundation
 class ContractorsService {
     func fetch() -> [Contractor] {
         let responseData = mockedNames().data(using: .utf8)
-        let decoder = JSONDecoder()
-        let decodedResponse = try! decoder.decode(ContractorResponse.self, from: responseData!)
-        let contractorArray = decodedResponse.contractors
-        return contractorArray
+        let decodedResponse = try! JSONDecoder().decode(ContractorResponse.self, from: responseData!)
+        return decodedResponse.contractors
     }
     
     private func mockedNames() -> String {
@@ -46,6 +44,24 @@ class ContractorsService {
         "phone_number": "(513) 381-1470",
         "email": "pyankie@greenbldgconsulting.com",
         "website": "www.greenbuildingconsulting.com"
+        },
+        {
+        "company_name": "Green Cincinnati Education Advocacy",
+        "contact_name": "Chuck Lohre",
+        "address": "126A West 14th Street, 2nd Floor, Cincinnati, OH 45202",
+        "blurb": "Green Cincinnati’s goal is to help promote Green Building and provide the public with the resources needed to advocate for the U.S Green Building Council’s LEED Certification process.",
+        "phone_number": "877-608-1736",
+        "email": "chuck@lohre.com",
+        "website": "www.green-cincinnati.com"
+        },
+        {
+        "company_name": "Greener Stock",
+        "contact_name": "Heather Curless",
+        "address": "3528 Columbia Parkway, Cincinnati, OH 45226",
+        "blurb": "Building Supply & Heather Curless LEED Accredited Architect – Whether home, office, or factory if you want to see the latest in energy conservation and sustainability you need to stop by Heather Curless’s shop Greener Stock.",
+        "phone_number": "513.323.1262",
+        "email": "heather@greenerstock.com",
+        "website": "www.greenerstock.com"
         }]
         }
         """

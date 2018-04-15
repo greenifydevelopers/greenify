@@ -19,6 +19,15 @@ class AvailableContractorsViewController: UIViewController {
 
         contractors = contractorsService.fetch()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showContractorDetail" {
+            if let index = tableView.indexPathForSelectedRow?.row {
+                let dest = segue.destination as! ContractorDetailViewController
+                dest.contractor = contractors[index]
+            }
+        }
+    }
 }
 
 extension AvailableContractorsViewController: UITableViewDataSource {

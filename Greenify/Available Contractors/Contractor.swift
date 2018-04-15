@@ -19,5 +19,5 @@ struct Contractor: Codable {
     let blurb: String
     let phone_number: String
     let email: String
-    let website: URL
+    let website: String
 }
