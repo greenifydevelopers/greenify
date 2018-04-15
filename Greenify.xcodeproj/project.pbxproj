@@ -24,9 +24,8 @@
 		9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */; };
 		94A0AB182083B3D8008F4054 /* ContractorDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A0AB172083B3D8008F4054 /* ContractorDetail.storyboard */; };
 		94A0AB1A2083B405008F4054 /* ContractorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A0AB192083B405008F4054 /* ContractorDetailViewController.swift */; };
-		94B8400E20758CA40011D911 /* Contractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B8400D20758CA40011D911 /* Contractor.swift */; };
+		94A0AB1C2083BBB3008F4054 /* ChooseHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A0AB1B2083BBB3008F4054 /* ChooseHome.storyboard */; };
 		94B84012207D51D50011D911 /* ContractorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B84011207D51D50011D911 /* ContractorsService.swift */; };
-		A9BFFADD206C3E2200A67E5D /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BFFADC206C3E2200A67E5D /* Budget.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,9 +47,9 @@
 		9400F09B206467DC00676DB9 /* AvailableContractorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableContractorsViewController.swift; sourceTree = "<group>"; };
 		94A0AB172083B3D8008F4054 /* ContractorDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContractorDetail.storyboard; sourceTree = "<group>"; };
 		94A0AB192083B405008F4054 /* ContractorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractorDetailViewController.swift; sourceTree = "<group>"; };
+		94A0AB1B2083BBB3008F4054 /* ChooseHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseHome.storyboard; sourceTree = "<group>"; };
 		94B8400D20758CA40011D911 /* Contractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contractor.swift; sourceTree = "<group>"; };
 		94B84011207D51D50011D911 /* ContractorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractorsService.swift; sourceTree = "<group>"; };
-		A9BFFADC206C3E2200A67E5D /* Budget.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +95,7 @@
 				9400F09A206467C700676DB9 /* Available Contractors */,
 				94A0AB162083B3BB008F4054 /* Contractor Detail */,
 				A9BFFADE206C3E2D00A67E5D /* Budget */,
+				94A0AB1B2083BBB3008F4054 /* ChooseHome.storyboard */,
 			);
 			path = Greenify;
 			sourceTree = "<group>";
@@ -222,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9400F085206057CB00676DB9 /* LaunchScreen.storyboard in Resources */,
+				94A0AB1C2083BBB3008F4054 /* ChooseHome.storyboard in Resources */,
 				94A0AB182083B3D8008F4054 /* ContractorDetail.storyboard in Resources */,
 				9400F082206057CB00676DB9 /* Assets.xcassets in Resources */,
 				9400F08F2064628400676DB9 /* Learn.storyboard in Resources */,
