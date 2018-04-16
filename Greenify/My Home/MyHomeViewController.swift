@@ -19,6 +19,7 @@ class MyHomeViewController: UIViewController {
     
     @IBOutlet weak var energyRatingView: EnergyRatingView!
     @IBOutlet weak var energyRating: UILabel!
+    var homeStruct: HomeStruct!
     
     override func viewDidLoad() {
         super.viewDidLoad()
