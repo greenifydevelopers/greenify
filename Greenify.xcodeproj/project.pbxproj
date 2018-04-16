@@ -26,6 +26,11 @@
 		94A0AB1A2083B405008F4054 /* ContractorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A0AB192083B405008F4054 /* ContractorDetailViewController.swift */; };
 		94A0AB1C2083BBB3008F4054 /* ChooseHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A0AB1B2083BBB3008F4054 /* ChooseHome.storyboard */; };
 		94B84012207D51D50011D911 /* ContractorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B84011207D51D50011D911 /* ContractorsService.swift */; };
+		A9645689208545A200719E5D /* ChooseHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9645688208545A200719E5D /* ChooseHomeTableViewController.swift */; };
+		A96F4A40207C041800F820B2 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A3F207C041800F820B2 /* MyHomeViewController.swift */; };
+		A96F4A42207C058100F820B2 /* MainRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A41207C058100F820B2 /* MainRatingView.swift */; };
+		A96F4A44207C0E9E00F820B2 /* WaterRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A43207C0E9E00F820B2 /* WaterRatingView.swift */; };
+		A96F4A46207C0EAD00F820B2 /* EnergyRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A45207C0EAD00F820B2 /* EnergyRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		94A0AB1B2083BBB3008F4054 /* ChooseHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseHome.storyboard; sourceTree = "<group>"; };
 		94B8400D20758CA40011D911 /* Contractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contractor.swift; sourceTree = "<group>"; };
 		94B84011207D51D50011D911 /* ContractorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractorsService.swift; sourceTree = "<group>"; };
+		A9645688208545A200719E5D /* ChooseHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseHomeTableViewController.swift; sourceTree = "<group>"; };
+		A96F4A3F207C041800F820B2 /* MyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
+		A96F4A41207C058100F820B2 /* MainRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRatingView.swift; sourceTree = "<group>"; };
+		A96F4A43207C0E9E00F820B2 /* WaterRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterRatingView.swift; sourceTree = "<group>"; };
+		A96F4A45207C0EAD00F820B2 /* EnergyRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 		9400F079206057CB00676DB9 /* Greenify */ = {
 			isa = PBXGroup;
 			children = (
+				A96456872085457B00719E5D /* ChooseHome */,
 				00B7A53D207D40A1006C1927 /* HomeStruct.swift */,
 				00B7A53F207D40C5006C1927 /* Homes.json */,
 				9400F07A206057CB00676DB9 /* AppDelegate.swift */,
@@ -95,7 +106,6 @@
 				9400F09A206467C700676DB9 /* Available Contractors */,
 				94A0AB162083B3BB008F4054 /* Contractor Detail */,
 				A9BFFADE206C3E2D00A67E5D /* Budget */,
-				94A0AB1B2083BBB3008F4054 /* ChooseHome.storyboard */,
 			);
 			path = Greenify;
 			sourceTree = "<group>";
@@ -156,6 +166,15 @@
 				94A0AB192083B405008F4054 /* ContractorDetailViewController.swift */,
 			);
 			path = "Contractor Detail";
+			sourceTree = "<group>";
+		};
+		A96456872085457B00719E5D /* ChooseHome */ = {
+			isa = PBXGroup;
+			children = (
+				94A0AB1B2083BBB3008F4054 /* ChooseHome.storyboard */,
+				A9645688208545A200719E5D /* ChooseHomeTableViewController.swift */,
+			);
+			path = ChooseHome;
 			sourceTree = "<group>";
 		};
 		A9BFFADE206C3E2D00A67E5D /* Budget */ = {
@@ -246,12 +265,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96F4A44207C0E9E00F820B2 /* WaterRatingView.swift in Sources */,
+				A96F4A42207C058100F820B2 /* MainRatingView.swift in Sources */,
 				00B7A53E207D40A1006C1927 /* HomeStruct.swift in Sources */,
 				9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */,
 				A96F4A46207C0EAD00F820B2 /* EnergyRatingView.swift in Sources */,
+				A9645689208545A200719E5D /* ChooseHomeTableViewController.swift in Sources */,
 				9400F0952064679700676DB9 /* LearnViewController.swift in Sources */,
 				94B84012207D51D50011D911 /* ContractorsService.swift in Sources */,
 				9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */,
+				A96F4A40207C041800F820B2 /* MyHomeViewController.swift in Sources */,
 				94A0AB1A2083B405008F4054 /* ContractorDetailViewController.swift in Sources */,
 				9400F09C206467DC00676DB9 /* AvailableContractorsViewController.swift in Sources */,
 				00FFA46A207D7FB40024C64E /* Contractor.swift in Sources */,
