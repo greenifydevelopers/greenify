@@ -35,6 +35,7 @@ struct HomeStruct: Codable
     var City: String
     var State: String
     var StateAbr: String
+    var Description: String
     var HeatingRating: Int32
     var CoolingRating: Int32
     var WaterHeaterRating: Int32
