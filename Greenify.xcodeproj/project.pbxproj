@@ -133,6 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				9400F08C2064626800676DB9 /* MyHome.storyboard */,
+				A96F4A3F207C041800F820B2 /* MyHomeViewController.swift */,
+				A96F4A41207C058100F820B2 /* MainRatingView.swift */,
+				A96F4A43207C0E9E00F820B2 /* WaterRatingView.swift */,
+				A96F4A45207C0EAD00F820B2 /* EnergyRatingView.swift */,
 			);
 			path = "My Home";
 			sourceTree = "<group>";
@@ -244,6 +248,7 @@
 			files = (
 				00B7A53E207D40A1006C1927 /* HomeStruct.swift in Sources */,
 				9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */,
+				A96F4A46207C0EAD00F820B2 /* EnergyRatingView.swift in Sources */,
 				9400F0952064679700676DB9 /* LearnViewController.swift in Sources */,
 				94B84012207D51D50011D911 /* ContractorsService.swift in Sources */,
 				9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */,
