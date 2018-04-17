@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001FA83320854ABB005DE35A /* GreenifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FA83220854ABB005DE35A /* GreenifyTests.swift */; };
 		00B7A53E207D40A1006C1927 /* HomeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7A53D207D40A1006C1927 /* HomeStruct.swift */; };
 		00B7A540207D40C5006C1927 /* Homes.json in Resources */ = {isa = PBXBuildFile; fileRef = 00B7A53F207D40C5006C1927 /* Homes.json */; };
 		00FFA469207D7F990024C64E /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFA468207D7F990024C64E /* Budget.storyboard */; };
@@ -33,7 +34,20 @@
 		A96F4A46207C0EAD00F820B2 /* EnergyRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4A45207C0EAD00F820B2 /* EnergyRatingView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		001FA83520854ABB005DE35A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9400F06F206057CB00676DB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9400F076206057CB00676DB9;
+			remoteInfo = Greenify;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		001FA83020854ABA005DE35A /* GreenifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001FA83220854ABB005DE35A /* GreenifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenifyTests.swift; sourceTree = "<group>"; };
+		001FA83420854ABB005DE35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B7A53D207D40A1006C1927 /* HomeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeStruct.swift; path = ../HomeStruct.swift; sourceTree = "<group>"; };
 		00B7A53F207D40C5006C1927 /* Homes.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = Homes.json; sourceTree = "<group>"; };
 		00FFA468207D7F990024C64E /* Budget.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
@@ -63,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		001FA82D20854ABA005DE35A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9400F074206057CB00676DB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,10 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001FA83120854ABA005DE35A /* GreenifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				001FA83220854ABB005DE35A /* GreenifyTests.swift */,
+				001FA83420854ABB005DE35A /* Info.plist */,
+			);
+			path = GreenifyTests;
+			sourceTree = "<group>";
+		};
 		9400F06E206057CB00676DB9 = {
 			isa = PBXGroup;
 			children = (
 				9400F079206057CB00676DB9 /* Greenify */,
+				001FA83120854ABA005DE35A /* GreenifyTests */,
 				9400F078206057CB00676DB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				9400F077206057CB00676DB9 /* Greenify.app */,
+				001FA83020854ABA005DE35A /* GreenifyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +220,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		001FA82F20854ABA005DE35A /* GreenifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001FA83920854ABB005DE35A /* Build configuration list for PBXNativeTarget "GreenifyTests" */;
+			buildPhases = (
+				001FA82C20854ABA005DE35A /* Sources */,
+				001FA82D20854ABA005DE35A /* Frameworks */,
+				001FA82E20854ABA005DE35A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001FA83620854ABB005DE35A /* PBXTargetDependency */,
+			);
+			name = GreenifyTests;
+			productName = GreenifyTests;
+			productReference = 001FA83020854ABA005DE35A /* GreenifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9400F076206057CB00676DB9 /* Greenify */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9400F089206057CB00676DB9 /* Build configuration list for PBXNativeTarget "Greenify" */;
@@ -215,6 +265,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Greenify;
 				TargetAttributes = {
+					001FA82F20854ABA005DE35A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9400F076206057CB00676DB9;
+					};
 					9400F076206057CB00676DB9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -235,11 +290,19 @@
 			projectRoot = "";
 			targets = (
 				9400F076206057CB00676DB9 /* Greenify */,
+				001FA82F20854ABA005DE35A /* GreenifyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		001FA82E20854ABA005DE35A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9400F075206057CB00676DB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +324,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		001FA82C20854ABA005DE35A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001FA83320854ABB005DE35A /* GreenifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9400F073206057CB00676DB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +354,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		001FA83620854ABB005DE35A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9400F076206057CB00676DB9 /* Greenify */;
+			targetProxy = 001FA83520854ABB005DE35A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9400F07E206057CB00676DB9 /* TabBar.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -303,6 +382,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		001FA83720854ABB005DE35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KV7BV7864H;
+				INFOPLIST_FILE = GreenifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MarkKhulenberg.GreenifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Greenify.app/Greenify";
+			};
+			name = Debug;
+		};
+		001FA83820854ABB005DE35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KV7BV7864H;
+				INFOPLIST_FILE = GreenifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MarkKhulenberg.GreenifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Greenify.app/Greenify";
+			};
+			name = Release;
+		};
 		9400F087206057CB00676DB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,6 +554,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		001FA83920854ABB005DE35A /* Build configuration list for PBXNativeTarget "GreenifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001FA83720854ABB005DE35A /* Debug */,
+				001FA83820854ABB005DE35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9400F072206057CB00676DB9 /* Build configuration list for PBXProject "Greenify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
