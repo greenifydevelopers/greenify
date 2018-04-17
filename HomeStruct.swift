@@ -35,20 +35,20 @@ struct HomeStruct: Codable
     var City: String
     var State: String
     var StateAbr: String
-    var HeatingRating: Int32
-    var CoolingRating: Int32
-    var WaterHeaterRating: Int32
-    var LightingRating: Int32
-    var Washer_DryerRating: Int32
-    var OtherEnergyRating: Int32
-    var FridgeRating: Int32
-    var OvenRating: Int32
-    var ShowerRating: Int32
-    var ToiletsRating: Int32
-    var Faucets_SinksRating: Int32
-    var WasherRating: Int32
-    var LeakRating: Int32
-    var OtherWaterRating: Int32
+    var HeatingRating: Double
+    var CoolingRating: Double
+    var WaterHeaterRating: Double
+    var LightingRating: Double
+    var Washer_DryerRating: Double
+    var OtherEnergyRating: Double
+    var FridgeRating: Double
+    var OvenRating: Double
+    var ShowerRating: Double
+    var ToiletsRating: Double
+    var Faucets_SinksRating: Double
+    var WasherRating: Double
+    var LeakRating: Double
+    var OtherWaterRating: Double
     //Returns a formatted version of the Homes full address
     func getFullAddress() -> String
     {
@@ -109,6 +109,14 @@ struct HomeStruct: Codable
     func getOtherWaterRatingWeighted()->Double
     {
         return (Double(OtherWaterRating) * WaterWeights.init().OtherWaterWeight)
+    }
+    func getWaterRating() -> Double
+    {
+        return getShowerRatingWeighted() + getToiletRatingWeighted() + getFaucets_SinksRatingWeighted() + getWasherRatingWeighted() + getLeakRatingWeighted() + getOtherWaterRatingWeighted()
+    }
+    func getEnergyRating() -> Double
+    {
+        return getHeatingRatingWeighted() + getCoolingRatingWeighted() + getWaterHeaterRatingWeighted() + getLightingRatingWeighted() + getWasher_DryerWeighted() + getOtherEnergyWeighted() + getFridgeRatingWeighted() + getOvenRatingWeighted()
     }
 }
 func loadJson() -> [HomeStruct]

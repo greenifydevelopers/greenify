@@ -1,11 +1,3 @@
-//
-//  MyHomeViewController.swift
-//  Greenify
-//
-//  Created by Erik Seitz on 4/9/18.
-//  Copyright © 2018 Greenify. All rights reserved.
-//
-
 import UIKit
 
 class MyHomeViewController: UIViewController {
@@ -19,10 +11,35 @@ class MyHomeViewController: UIViewController {
     
     @IBOutlet weak var energyRatingView: EnergyRatingView!
     @IBOutlet weak var energyRating: UILabel!
+    
+    
+    
+    @IBOutlet weak var addressLabel: UILabel!
+    
+    @IBOutlet weak var houseBio: UITextView!
+    
     var homeStruct: HomeStruct!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let waterRatingValue = (homeStruct.getWaterRating())
+        
+        let energyRatingValue = (homeStruct.getEnergyRating())
+        
+        
+        waterRatingView.counter = Int((waterRatingValue / 3) * 100)
+        energyRatingView.counter = Int((energyRatingValue / 3) * 100)
+        
+        var mainRatingValue = (waterRatingValue / 6) + (energyRatingValue / 2)
+        mainRatingValue = mainRatingValue / 2
+        mainRatingValue = mainRatingValue * 100
+        
+        mainRatingView.counter = Int(mainRatingValue)
+        
+        
+        addressLabel.text = homeStruct.getFullAddress()
+        
         
         mainRating.text =  String(mainRatingView.counter)
         waterRating.text = String(waterRatingView.counter)
@@ -34,16 +51,4 @@ class MyHomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

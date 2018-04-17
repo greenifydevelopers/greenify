@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,14 +23,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRJ-46-LOj">
                                 <rect key="frame" x="0.0" y="81" width="375" height="1970"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house-1" translatesAutoresizingMaskIntoConstraints="NO" id="g3S-r7-k01">
-                                        <rect key="frame" x="8" y="8" width="361" height="186"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="186" id="HcM-h9-vyO"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ9-Z3-wdk">
-                                        <rect key="frame" x="8" y="202" width="68" height="41"/>
+                                        <rect key="frame" x="6" y="8" width="68" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="68" id="4tl-5L-PTB"/>
                                         </constraints>
@@ -38,19 +33,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12443 House Drive, Highland Heights, KY 40321" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2W-Hm-Gpd">
-                                        <rect key="frame" x="82" y="212" width="285" height="41"/>
+                                        <rect key="frame" x="80" y="11" width="285" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Information: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdW-6M-JWX">
-                                        <rect key="frame" x="8" y="276" width="150" height="21"/>
+                                        <rect key="frame" x="6" y="75" width="150" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6g-X1-8Nf">
-                                        <rect key="frame" x="8" y="305" width="361" height="105"/>
+                                        <rect key="frame" x="6" y="104" width="361" height="105"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="105" id="CgI-bg-h59"/>
@@ -60,7 +55,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Rating" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e44-mr-cLZ">
-                                        <rect key="frame" x="20" y="709" width="105" height="21"/>
+                                        <rect key="frame" x="18" y="508" width="105" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="105" id="Nli-22-yxt"/>
                                             <constraint firstAttribute="height" constant="21" id="wiR-jQ-b1n"/>
@@ -70,7 +65,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5h8-HB-g0e" customClass="WaterRatingView" customModule="Greenify" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="738" width="105" height="104"/>
+                                        <rect key="frame" x="18" y="537" width="105" height="104"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwP-Ew-wnT">
                                                 <rect key="frame" x="28" y="75" width="49" height="21"/>
@@ -103,7 +98,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Energy Rating" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qh2-w6-Yt7">
-                                        <rect key="frame" x="237" y="709" width="120" height="21"/>
+                                        <rect key="frame" x="235" y="508" width="120" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Avd-eY-EzS"/>
                                             <constraint firstAttribute="width" constant="120" id="pnl-pP-jKV"/>
@@ -113,7 +108,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4I9-fn-Ba6" customClass="MainRatingView" customModule="Greenify" customModuleProvider="target">
-                                        <rect key="frame" x="72" y="471" width="230" height="230"/>
+                                        <rect key="frame" x="70" y="270" width="230" height="230"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4U-49-CMg">
                                                 <rect key="frame" x="75" y="172" width="79" height="34"/>
@@ -141,7 +136,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeF-1x-jaV" customClass="EnergyRatingView" customModule="Greenify" customModuleProvider="target">
-                                        <rect key="frame" x="247" y="738" width="105" height="104"/>
+                                        <rect key="frame" x="245" y="537" width="105" height="104"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogN-h7-TtY">
                                                 <rect key="frame" x="28" y="75" width="49" height="21"/>
@@ -170,46 +165,43 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greenify Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oid-xi-btk">
-                                        <rect key="frame" x="8" y="426" width="359" height="29"/>
+                                        <rect key="frame" x="6" y="225" width="359" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="g3S-r7-k01" secondAttribute="trailing" constant="6" id="03z-uc-o9s"/>
-                                    <constraint firstItem="4I9-fn-Ba6" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="72" id="2IC-wq-xff"/>
+                                    <constraint firstItem="4I9-fn-Ba6" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="70" id="2IC-wq-xff"/>
                                     <constraint firstItem="oid-xi-btk" firstAttribute="top" secondItem="l6g-X1-8Nf" secondAttribute="bottom" constant="16" id="2nZ-vu-GDP"/>
                                     <constraint firstItem="qdW-6M-JWX" firstAttribute="leading" secondItem="l6g-X1-8Nf" secondAttribute="leading" id="4ut-M2-Tug"/>
                                     <constraint firstItem="FeF-1x-jaV" firstAttribute="top" secondItem="Qh2-w6-Yt7" secondAttribute="bottom" constant="8" id="5EF-HB-97e"/>
                                     <constraint firstItem="e44-mr-cLZ" firstAttribute="top" secondItem="4I9-fn-Ba6" secondAttribute="bottom" constant="8" id="5qp-Ty-jrG"/>
-                                    <constraint firstItem="C2W-Hm-Gpd" firstAttribute="top" secondItem="g3S-r7-k01" secondAttribute="bottom" constant="18" id="7qO-FZ-NIP"/>
-                                    <constraint firstItem="MQ9-Z3-wdk" firstAttribute="firstBaseline" secondItem="C2W-Hm-Gpd" secondAttribute="firstBaseline" constant="-10" id="8M6-IF-dDs"/>
+                                    <constraint firstItem="MQ9-Z3-wdk" firstAttribute="firstBaseline" secondItem="C2W-Hm-Gpd" secondAttribute="firstBaseline" constant="-3" id="8M6-IF-dDs"/>
                                     <constraint firstItem="4I9-fn-Ba6" firstAttribute="top" secondItem="oid-xi-btk" secondAttribute="bottom" constant="16" id="9l9-iX-HJY"/>
-                                    <constraint firstItem="g3S-r7-k01" firstAttribute="top" secondItem="iRJ-46-LOj" secondAttribute="top" constant="8" id="C3d-Zd-NkP"/>
-                                    <constraint firstItem="MQ9-Z3-wdk" firstAttribute="baseline" secondItem="C2W-Hm-Gpd" secondAttribute="baseline" constant="-10" id="D4J-57-woc"/>
-                                    <constraint firstAttribute="bottom" secondItem="FeF-1x-jaV" secondAttribute="bottom" constant="1181" id="EXo-sf-ybB"/>
+                                    <constraint firstItem="MQ9-Z3-wdk" firstAttribute="top" secondItem="iRJ-46-LOj" secondAttribute="topMargin" id="CV2-uw-VW8"/>
+                                    <constraint firstItem="MQ9-Z3-wdk" firstAttribute="baseline" secondItem="C2W-Hm-Gpd" secondAttribute="baseline" constant="-3" id="D4J-57-woc"/>
+                                    <constraint firstAttribute="bottom" secondItem="FeF-1x-jaV" secondAttribute="bottom" constant="1329" id="EXo-sf-ybB"/>
                                     <constraint firstItem="Qh2-w6-Yt7" firstAttribute="leading" secondItem="e44-mr-cLZ" secondAttribute="trailing" constant="112" id="FNS-p5-QOz"/>
-                                    <constraint firstAttribute="bottom" secondItem="5h8-HB-g0e" secondAttribute="bottom" constant="1181" id="JH7-2I-uC5"/>
+                                    <constraint firstAttribute="bottom" secondItem="5h8-HB-g0e" secondAttribute="bottom" constant="1329" id="JH7-2I-uC5"/>
                                     <constraint firstItem="l6g-X1-8Nf" firstAttribute="top" secondItem="qdW-6M-JWX" secondAttribute="bottom" constant="8" id="Jbv-ec-kan"/>
-                                    <constraint firstAttribute="trailing" secondItem="l6g-X1-8Nf" secondAttribute="trailing" constant="6" id="NPs-Au-THU"/>
-                                    <constraint firstAttribute="trailing" secondItem="Qh2-w6-Yt7" secondAttribute="trailing" constant="18" id="QMe-pU-E3r"/>
-                                    <constraint firstItem="oid-xi-btk" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="8" id="SCJ-c0-KYe"/>
-                                    <constraint firstItem="l6g-X1-8Nf" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="8" id="UiQ-An-Nzr"/>
-                                    <constraint firstItem="g3S-r7-k01" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="8" id="VCE-HM-dTq"/>
+                                    <constraint firstAttribute="trailing" secondItem="l6g-X1-8Nf" secondAttribute="trailing" constant="8" id="NPs-Au-THU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qh2-w6-Yt7" secondAttribute="trailing" constant="20" id="QMe-pU-E3r"/>
+                                    <constraint firstItem="oid-xi-btk" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="6" id="SCJ-c0-KYe"/>
+                                    <constraint firstItem="l6g-X1-8Nf" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="6" id="UiQ-An-Nzr"/>
                                     <constraint firstItem="5h8-HB-g0e" firstAttribute="top" secondItem="e44-mr-cLZ" secondAttribute="bottom" constant="8" id="VN1-jl-6cP"/>
                                     <constraint firstItem="e44-mr-cLZ" firstAttribute="top" secondItem="4I9-fn-Ba6" secondAttribute="bottom" constant="8" id="aWL-q1-zcx"/>
                                     <constraint firstItem="MQ9-Z3-wdk" firstAttribute="leading" secondItem="qdW-6M-JWX" secondAttribute="leading" id="ai8-jO-LgZ"/>
-                                    <constraint firstItem="5h8-HB-g0e" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="20" id="fzg-n4-kKO"/>
+                                    <constraint firstItem="5h8-HB-g0e" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="18" id="fzg-n4-kKO"/>
                                     <constraint firstItem="C2W-Hm-Gpd" firstAttribute="leading" secondItem="MQ9-Z3-wdk" secondAttribute="trailing" constant="6" id="h2t-Jn-klS"/>
                                     <constraint firstItem="5h8-HB-g0e" firstAttribute="top" secondItem="e44-mr-cLZ" secondAttribute="bottom" constant="8" id="hFX-oj-oJl"/>
                                     <constraint firstItem="FeF-1x-jaV" firstAttribute="top" secondItem="Qh2-w6-Yt7" secondAttribute="bottom" constant="8" id="hwG-MZ-oDd"/>
-                                    <constraint firstAttribute="trailing" secondItem="FeF-1x-jaV" secondAttribute="trailing" constant="23" id="jvK-Xx-TTc"/>
-                                    <constraint firstAttribute="trailing" secondItem="oid-xi-btk" secondAttribute="trailing" constant="8" id="kZS-5i-VUK"/>
-                                    <constraint firstAttribute="trailing" secondItem="C2W-Hm-Gpd" secondAttribute="trailing" constant="8" id="oQ1-SZ-hb3"/>
-                                    <constraint firstItem="e44-mr-cLZ" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="20" id="p2K-Xh-vOO"/>
+                                    <constraint firstAttribute="trailing" secondItem="FeF-1x-jaV" secondAttribute="trailing" constant="25" id="jvK-Xx-TTc"/>
+                                    <constraint firstAttribute="trailing" secondItem="oid-xi-btk" secondAttribute="trailing" constant="10" id="kZS-5i-VUK"/>
+                                    <constraint firstAttribute="trailing" secondItem="C2W-Hm-Gpd" secondAttribute="trailing" constant="10" id="oQ1-SZ-hb3"/>
+                                    <constraint firstItem="e44-mr-cLZ" firstAttribute="leading" secondItem="iRJ-46-LOj" secondAttribute="leading" constant="18" id="p2K-Xh-vOO"/>
                                     <constraint firstItem="Qh2-w6-Yt7" firstAttribute="top" secondItem="4I9-fn-Ba6" secondAttribute="bottom" constant="8" id="wdo-RN-Dpw"/>
-                                    <constraint firstItem="qdW-6M-JWX" firstAttribute="top" secondItem="MQ9-Z3-wdk" secondAttribute="bottom" constant="33" id="weo-Bg-vPH"/>
+                                    <constraint firstItem="qdW-6M-JWX" firstAttribute="top" secondItem="MQ9-Z3-wdk" secondAttribute="bottom" constant="26" id="weo-Bg-vPH"/>
                                 </constraints>
                             </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Greenify_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fGo-J7-Sa4">
@@ -242,8 +234,10 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="addressLabel" destination="C2W-Hm-Gpd" id="nrC-nK-6ZP"/>
                         <outlet property="energyRating" destination="ogN-h7-TtY" id="BPa-te-hJe"/>
                         <outlet property="energyRatingView" destination="FeF-1x-jaV" id="43q-qc-BT5"/>
+                        <outlet property="houseBio" destination="l6g-X1-8Nf" id="TTK-jP-Kwe"/>
                         <outlet property="mainRating" destination="D4U-49-CMg" id="czw-7r-lS2"/>
                         <outlet property="mainRatingView" destination="4I9-fn-Ba6" id="hTQ-RJ-Beo"/>
                         <outlet property="waterRating" destination="dwP-Ew-wnT" id="vNd-gi-HdA"/>
@@ -257,6 +251,5 @@
     </scenes>
     <resources>
         <image name="Greenify_Logo" width="934" height="300"/>
-        <image name="house-1" width="300" height="300"/>
     </resources>
 </document>
