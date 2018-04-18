@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="90" y="140"/>
         </scene>
-        <!--MyHome-->
+        <!--TabBar-->
         <scene sceneID="JjW-CI-zgK">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyHome" id="bQw-7d-o8S" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="TabBar" id="bQw-7d-o8S" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ni9-ie-YXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="165"/>
