@@ -10,14 +10,15 @@ import UIKit
 
 class ItemDetailViewController: UIViewController {
 
-    @IBOutlet weak var detailText: UITextView!
+    @IBOutlet private weak var detailText: UITextView!
+    var textToDisplay = "This furnace sucks"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var myText = "This furnace sucks"
         
-        detailText.text = myText
+        
+        detailText.text = textToDisplay
         // Do any additional setup after loading the view.
     }
 

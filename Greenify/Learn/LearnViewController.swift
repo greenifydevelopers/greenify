@@ -23,9 +23,9 @@ class LearnViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toLearnInfo" {
-//            if let dest = segue.destination as! ItemDetailViewController, let selectedIndex = tableView.indexPathForSelectedRow {
-//                dest. = problems[selectedIndex]
-//            }
+            if let dest = segue.destination as? ItemDetailViewController, let selectedIndex = tableView.indexPathForSelectedRow {
+                dest.textToDisplay = problems[selectedIndex.row]
+            }
         }
     }
 }
@@ -43,7 +43,7 @@ extension LearnViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "learnTableCell", for: indexPath)
         
 //        cell.textLabel?.text = problems.
-//        cell.detailTextLabel?.text = problems.
+//        cell.detailTextLabel?.text = "Greenify rating: \(problems.)"
         
         return cell
     }
