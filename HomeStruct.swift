@@ -63,6 +63,7 @@ struct HomeStruct: Codable
     var Leak: ProblemsStruct
     var OtherWaterRating: Double
     var OtherWater: ProblemsStruct
+    var Description: String
     //Returns a formatted version of the Homes full address
     func getFullAddress() -> String
     {
