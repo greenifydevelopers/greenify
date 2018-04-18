@@ -7,19 +7,89 @@
   "State": "Illinois",
   "StateAbr": "IL",
   "HeatingRating": 2,
+  "Heating":
+    {
+  "problems":"Bad Furnace",
+  "learn":"The furnace is past the age that is recommended by the National Homeowners Association"
+  },
   "CoolingRating": 3,
+  "Cooling":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "WaterHeaterRating": 1,
+  "WaterHeaterDscr":
+  {
+  "problems":"Pipes Rusted, Water Heater old",
+  "learn":"Water heater is old and requires complete replacement because it is inefficient and it also requires more power than what is recommended. Pipes to the water Heater also need replaced"
+  },
   "LightingRating": 3,
+  "Lighting":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "Washer_DryerRating": 1,
+  "Washer_Dryer":
+  {
+  "problems":"Washer and Dryer inefficient and leaking",
+  "learn":"Washer and Dryer need replaced due to inefficiency, and water is leaking which can cause problems with floors also."
+  },
   "OtherEnergyRating": 1,
+  "OtherEnergy":
+  {
+  "problems":"Showing High Energy Usage",
+  "learn":"The house in general is showing high energy rating this will need fixed for a higher rating to be achieved"
+  },
   "FridgeRating": 3,
+  "Fridge":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "OvenRating": 2,
+  "Oven":
+  {
+  "problems":"Wiring is pulling to much energy",
+  "learn":"Wiring will need redone for oven to function correctly"
+  },
   "ShowerRating": 1,
+  "Shower":
+  {
+  "problems":"Molded Pipes",
+  "learn":"Low water pressure is causing problems, this could be coming from water heater also could be Mold in the Pipes"
+  },
   "ToiletsRating": 3,
+  "Toilets":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "Faucets_SinksRating": 1,
+  "Faucets_Sinks":
+  {
+  "problems":"Not Working",
+  "learn":"You have previously identified that the faucet in your second bathroom isn't working unable to give any further information."
+  },
   "WasherRating": 2,
+  "Washer":
+  {
+  "problems":"Pulling Energy",
+  "learn":"Washer is pulling to much energy causing it to break down quicker, could be washing machine or electric current."
+  },
   "LeakRating": 2,
+  "Leak":
+  {
+  "problems":"Washer and Dryer",
+  "learn":"Washer is leaking, causing damage to floors"
+  },
   "OtherWaterRating": 2,
+  "OtherWater":
+  {
+  "problems":"High Water Bill",
+  "learn":"High Water Bill with no change in usage could be caused by leak in pipe from street to home."
+  },
   "Description": "Beautiful Quaint home. Located in a small town right outside of Springfield Illinois. Has 3 bedrooms, and 2 Bath rooms. With how beautiful this house is you will hardly notice your yellow drunk neighbor."
   
   },
@@ -31,20 +101,90 @@
   "State": "New Jersey",
   "StateAbr": "NJ",
   "HeatingRating": 2,
+  "Heating":
+  {
+  "problems":"Bad Furnace",
+  "learn":"The furnace is past the age that is recommended by the National Homeowners Association"
+  },
   "CoolingRating": 1,
+  "Cooling":
+  {
+  "problems":"AC system failing",
+  "learn":"AC system is failing will require new ducts and furnace."
+  },
   "WaterHeaterRating": 1,
-  "LightingRating": 2,
+  "WaterHeaterDscr":
+  {
+  "problems":"Pipes Rusted, Water Heater old",
+  "learn":"Water heater is old and requires complete replacement because it is inefficient and it also requires more power than what is recommended. Pipes to the water Heater also need replaced"
+  },
+  "LightingRating": 3,
+  "Lighting":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "Washer_DryerRating": 1,
+  "Washer_Dryer":
+  {
+  "problems":"Washer and Dryer inefficient and leaking",
+  "learn":"Washer and Dryer need replaced due to inefficiency, and water is leaking which can cause problems with floors also."
+  },
   "OtherEnergyRating": 1,
-  "FridgeRating": 2,
+  "OtherEnergy":
+  {
+  "problems":"Showing High Energy Usage",
+  "learn":"The house in general is showing high energy rating this will need fixed for a higher rating to be achieved"
+  },
+  "FridgeRating": 3,
+  "Fridge":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "OvenRating": 2,
+  "Oven":
+  {
+  "problems":"Wiring is pulling to much energy",
+  "learn":"Wiring will need redone for oven to function correctly"
+  },
   "ShowerRating": 1,
+  "Shower":
+  {
+  "problems":"Molded Pipes",
+  "learn":"Low water pressure is causing problems, this could be coming from water heater also could be Mold in the Pipes"
+  },
   "ToiletsRating": 3,
-  "Faucets_SinksRating": 2,
-  "WasherRating": 3,
+  "Toilets":
+  {
+  "problems":"None",
+  "learn":""
+  },
+  "Faucets_SinksRating": 1,
+  "Faucets_Sinks":
+  {
+  "problems":"Not Working",
+  "learn":"You have previously identified that the faucet in your second bathroom isn't working unable to give any further information."
+  },
+  "WasherRating": 2,
+  "Washer":
+  {
+  "problems":"Pulling Energy",
+  "learn":"Washer is pulling to much energy causing it to break down quicker, could be washing machine or electric current."
+  },
   "LeakRating": 2,
-  "OtherWaterRating": 3,
-  "Description": "The floor plan encompasses four spacious bedrooms with plenty of room for study, sleep and storage, three luxurious bathrooms, and a sleek and stylish kitchen that flows through to the dining room and private rear patio. The master bedroom, complete with walk-in robe and ensuite, ensures parents have a private space where they can enjoy the view."
+  "Leak":
+  {
+  "problems":"Washer and Dryer",
+  "learn":"Washer is leaking, causing damage to floors"
+  },
+  "OtherWaterRating": 2,
+  "OtherWater":
+  {
+  "problems":"High Water Bill",
+  "learn":"High Water Bill with no change in usage could be caused by leak in pipe from street to home."
+  },
+ "Description": "The floor plan encompasses four spacious bedrooms with plenty of room for study, sleep and storage, three luxurious bathrooms, and a sleek and stylish kitchen that flows through to the dining room and private rear patio. The master bedroom, complete with walk-in robe and ensuite, ensures parents have a private space where they can enjoy the view."
   },
   {
   "StreetNumber": "382",
@@ -54,19 +194,89 @@
   "State": "New York",
   "StateAbr": "NY",
   "HeatingRating": 3,
-  "CoolingRating": 3,
+  "Heating":
+  {
+  "problems":"None",
+  "learn":""
+  },
+  "CoolingRating": 1,
+  "Cooling":
+  {
+  "problems":"AC system failing",
+  "learn":"AC system is failing will require new ducts and furnace."
+  },
   "WaterHeaterRating": 1,
+  "WaterHeaterDscr":
+  {
+  "problems":"Pipes Rusted, Water Heater old",
+  "learn":"Water heater is old and requires complete replacement because it is inefficient and it also requires more power than what is recommended. Pipes to the water Heater also need replaced"
+  },
   "LightingRating": 3,
+  "Lighting":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "Washer_DryerRating": 1,
+  "Washer_Dryer":
+  {
+  "problems":"Washer and Dryer inefficient and leaking",
+  "learn":"Washer and Dryer need replaced due to inefficiency, and water is leaking which can cause problems with floors also."
+  },
   "OtherEnergyRating": 1,
-  "FridgeRating": 2,
+  "OtherEnergy":
+  {
+  "problems":"Showing High Energy Usage",
+  "learn":"The house in general is showing high energy rating this will need fixed for a higher rating to be achieved"
+  },
+  "FridgeRating": 3,
+  "Fridge":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "OvenRating": 2,
+  "Oven":
+  {
+  "problems":"Wiring is pulling to much energy",
+  "learn":"Wiring will need redone for oven to function correctly"
+  },
   "ShowerRating": 1,
+  "Shower":
+  {
+  "problems":"Molded Pipes",
+  "learn":"Low water pressure is causing problems, this could be coming from water heater also could be Mold in the Pipes"
+  },
   "ToiletsRating": 3,
-  "Faucets_SinksRating": 2,
+  "Toilets":
+  {
+  "problems":"None",
+  "learn":""
+  },
+  "Faucets_SinksRating": 1,
+  "Faucets_Sinks":
+  {
+  "problems":"Not Working",
+  "learn":"You have previously identified that the faucet in your second bathroom isn't working unable to give any further information."
+  },
   "WasherRating": 2,
-  "LeakRating": 1,
+  "Washer":
+  {
+  "problems":"Pulling Energy",
+  "learn":"Washer is pulling to much energy causing it to break down quicker, could be washing machine or electric current."
+  },
+  "LeakRating": 2,
+  "Leak":
+  {
+  "problems":"Washer and Dryer",
+  "learn":"Washer is leaking, causing damage to floors"
+  },
   "OtherWaterRating": 2,
+  "OtherWater":
+  {
+  "problems":"High Water Bill",
+  "learn":"High Water Bill with no change in usage could be caused by leak in pipe from street to home."
+  },
   "Description": "Cool, calm and sophisticated with a youthful edge, this functional home is enveloped in light and comfort. Crisp white walls, timber floors and high ceilings create a style as timeless as the sparkling ocean view. The calming sea vista, captured through the extensive use of glass, will help you forget your city stress."
   },
   {
@@ -77,19 +287,89 @@
   "State": "California",
   "StateAbr": "CA",
   "HeatingRating": 2,
+  "Heating":
+  {
+  "problems":"Bad Furnace",
+  "learn":"The furnace is past the age that is recommended by the National Homeowners Association"
+  },
   "CoolingRating": 1,
+  "Cooling":
+  {
+  "problems":"AC system failing",
+  "learn":"AC system is failing will require new ducts and furnace."
+  },
   "WaterHeaterRating": 1,
+  "WaterHeaterDscr":
+  {
+  "problems":"Pipes Rusted, Water Heater old",
+  "learn":"Water heater is old and requires complete replacement because it is inefficient and it also requires more power than what is recommended. Pipes to the water Heater also need replaced"
+  },
   "LightingRating": 3,
+  "Lighting":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "Washer_DryerRating": 1,
+  "Washer_Dryer":
+  {
+  "problems":"Washer and Dryer inefficient and leaking",
+  "learn":"Washer and Dryer need replaced due to inefficiency, and water is leaking which can cause problems with floors also."
+  },
   "OtherEnergyRating": 1,
-  "FridgeRating": 1,
+  "OtherEnergy":
+  {
+  "problems":"Showing High Energy Usage",
+  "learn":"The house in general is showing high energy rating this will need fixed for a higher rating to be achieved"
+  },
+  "FridgeRating": 3,
+  "Fridge":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "OvenRating": 2,
+  "Oven":
+  {
+  "problems":"Wiring is pulling to much energy",
+  "learn":"Wiring will need redone for oven to function correctly"
+  },
   "ShowerRating": 1,
-  "ToiletsRating": 1,
+  "Shower":
+  {
+  "problems":"Molded Pipes",
+  "learn":"Low water pressure is causing problems, this could be coming from water heater also could be Mold in the Pipes"
+  },
+  "ToiletsRating": 3,
+  "Toilets":
+  {
+  "problems":"None",
+  "learn":""
+  },
   "Faucets_SinksRating": 1,
+  "Faucets_Sinks":
+  {
+  "problems":"Not Working",
+  "learn":"You have previously identified that the faucet in your second bathroom isn't working unable to give any further information."
+  },
   "WasherRating": 2,
+  "Washer":
+  {
+  "problems":"Pulling Energy",
+  "learn":"Washer is pulling to much energy causing it to break down quicker, could be washing machine or electric current."
+  },
   "LeakRating": 2,
+  "Leak":
+  {
+  "problems":"Washer and Dryer",
+  "learn":"Washer is leaking, causing damage to floors"
+  },
   "OtherWaterRating": 2,
+  "OtherWater":
+  {
+  "problems":"High Water Bill",
+  "learn":"High Water Bill with no change in usage could be caused by leak in pipe from street to home."
+  },
   "Description": "The house comes complete with two living rooms, a welcoming kitchen/dining area, two bathrooms, three bedrooms, a study and a laundry, and retains the value of peaceful living while being conveniently close to shops, school and transport"
   }
   ]
