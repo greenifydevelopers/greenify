@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uFe-HW-484">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uFe-HW-484">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,7 +68,7 @@
         <!--Information-->
         <scene sceneID="Gnj-uH-gzU">
             <objects>
-                <viewController id="7qq-2q-gxL" sceneMemberID="viewController">
+                <viewController id="7qq-2q-gxL" customClass="ItemDetailViewController" customModule="Greenify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jFu-18-zBT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,19 +80,33 @@
                                     <segue destination="o5L-1x-7AW" kind="show" id="MmK-cW-rY3"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bUk-i9-1h3">
+                                <rect key="frame" x="16" y="80" width="343" height="238"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SQC-rR-WQO" firstAttribute="centerX" secondItem="HYc-eL-8pC" secondAttribute="centerX" id="6H6-CZ-LuB"/>
+                            <constraint firstItem="bUk-i9-1h3" firstAttribute="top" secondItem="HYc-eL-8pC" secondAttribute="top" constant="16" id="Glh-Vg-M22"/>
+                            <constraint firstItem="HYc-eL-8pC" firstAttribute="trailing" secondItem="bUk-i9-1h3" secondAttribute="trailing" constant="16" id="RET-8K-hZq"/>
+                            <constraint firstItem="SQC-rR-WQO" firstAttribute="top" secondItem="bUk-i9-1h3" secondAttribute="bottom" constant="8" id="t5A-bI-8Cb"/>
+                            <constraint firstItem="bUk-i9-1h3" firstAttribute="leading" secondItem="HYc-eL-8pC" secondAttribute="leading" constant="16" id="vhG-Bw-gru"/>
                             <constraint firstItem="SQC-rR-WQO" firstAttribute="centerY" secondItem="HYc-eL-8pC" secondAttribute="centerY" id="wus-xw-TlS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HYc-eL-8pC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Information" id="LSV-NG-WLC"/>
+                    <connections>
+                        <outlet property="detailText" destination="bUk-i9-1h3" id="lXk-Ij-D1L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eae-PZ-46e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305" y="133"/>
+            <point key="canvasLocation" x="1304.8" y="132.68365817091455"/>
         </scene>
         <!--AvailableContractors-->
         <scene sceneID="RMu-rY-Ekk">
