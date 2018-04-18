@@ -23,9 +23,11 @@ class MyHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let waterRatingValue = (homeStruct.getWaterRating())
+        homeStruct = (UIApplication.shared.delegate as! AppDelegate).homeStruct
         
-        let energyRatingValue = (homeStruct.getEnergyRating())
+        let waterRatingValue = (homeStruct!.getWaterRating())
+        
+        let energyRatingValue = (homeStruct!.getEnergyRating())
         
         
         waterRatingView.counter = Int((waterRatingValue / 3) * 100)
@@ -37,14 +39,11 @@ class MyHomeViewController: UIViewController {
         
         mainRatingView.counter = Int(mainRatingValue)
         
-        
-        addressLabel.text = homeStruct.getFullAddress()
-        
+        addressLabel.text = homeStruct!.getFullAddress()
         
         mainRating.text =  String(mainRatingView.counter)
         waterRating.text = String(waterRatingView.counter)
         energyRating.text = String(energyRatingView.counter)
-        
     }
 
     override func didReceiveMemoryWarning() {

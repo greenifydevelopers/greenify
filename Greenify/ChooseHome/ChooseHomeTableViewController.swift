@@ -45,8 +45,7 @@ class ChooseHomeTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToMyHome" {
             if let index = tableView.indexPathForSelectedRow?.row {
-                let dest = segue.destination as! MyHomeViewController
-                dest.homeStruct = listOfHomes[index]
+                (UIApplication.shared.delegate as! AppDelegate).homeStruct = listOfHomes[index]
             }
         }
     }
