@@ -11,20 +11,21 @@ import UIKit
 class LearnViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var problems: [String]!
+    var problems: [ProblemsStruct]!
 
+    private var homeStruct: HomeStruct!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let homeStruct = (UIApplication.shared.delegate as! AppDelegate).homeStruct
-//        let problems = homeStruct.problems ...
+        homeStruct = (UIApplication.shared.delegate as! AppDelegate).homeStruct
+//        let problems = homeStruct.
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toLearnInfo" {
             if let dest = segue.destination as? ItemDetailViewController, let selectedIndex = tableView.indexPathForSelectedRow {
-                dest.textToDisplay = problems[selectedIndex.row]
+                dest.textToDisplay = problems[selectedIndex.row].learn
             }
         }
     }
@@ -42,8 +43,8 @@ extension LearnViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "learnTableCell", for: indexPath)
         
-//        cell.textLabel?.text = problems.
-//        cell.detailTextLabel?.text = "Greenify rating: \(problems.)"
+        cell.textLabel?.text = problems[indexPath.row].problems
+        cell.detailTextLabel?.text = "Greenify rating: \(homeStruct.getEnergyRating())"
         
         return cell
     }
