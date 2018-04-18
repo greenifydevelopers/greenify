@@ -40,6 +40,7 @@ class MyHomeViewController: UIViewController {
         mainRatingView.counter = Int(mainRatingValue)
         
         addressLabel.text = homeStruct!.getFullAddress()
+        houseBio.text = homeStruct!.Description
         
         mainRating.text =  String(mainRatingView.counter)
         waterRating.text = String(waterRatingView.counter)
