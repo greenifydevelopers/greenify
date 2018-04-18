@@ -9,17 +9,30 @@
 import UIKit
 
 class LearnViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    var problems: [String]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        let homeStruct = (UIApplication.shared.delegate as! AppDelegate).homeStruct
+//        let problems = homeStruct.problems ...
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toLearnInfo" {
+            if let dest = segue.destination as? ItemDetailViewController, let selectedIndex = tableView.indexPathForSelectedRow {
+                dest.textToDisplay = problems[selectedIndex.row]
+            }
+        }
     }
 }
 
 extension LearnViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return problems.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,7 +42,8 @@ extension LearnViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "learnTableCell", for: indexPath)
         
-        cell.textLabel?.text = "Bad furnace"
+//        cell.textLabel?.text = problems.
+//        cell.detailTextLabel?.text = "Greenify rating: \(problems.)"
         
         return cell
     }

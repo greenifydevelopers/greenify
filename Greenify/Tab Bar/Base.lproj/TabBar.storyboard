@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qCE-oT-74j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qCE-oT-74j">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +22,6 @@
                         <segue destination="J8w-jE-cwy" kind="relationship" relationship="viewControllers" id="hWK-c8-6tr"/>
                         <segue destination="C2P-Jp-FEh" kind="relationship" relationship="viewControllers" id="a0V-L3-dPr"/>
                         <segue destination="7Qo-Br-XIH" kind="relationship" relationship="viewControllers" id="wdb-qS-79y"/>
-                        <segue destination="XAW-PB-7xE" kind="relationship" relationship="viewControllers" id="nvP-1m-vjf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIX-mq-xUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,16 +57,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vA-Zj-ejW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="647" y="154"/>
-        </scene>
-        <!--Budget-->
-        <scene sceneID="oxE-im-80G">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Budget" id="XAW-PB-7xE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="c1P-K1-JtD"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EcP-KX-efN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="595" y="219"/>
         </scene>
     </scenes>
 </document>

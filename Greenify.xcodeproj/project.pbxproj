@@ -10,8 +10,8 @@
 		001FA83320854ABB005DE35A /* GreenifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FA83220854ABB005DE35A /* GreenifyTests.swift */; };
 		00B7A53E207D40A1006C1927 /* HomeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B7A53D207D40A1006C1927 /* HomeStruct.swift */; };
 		00B7A540207D40C5006C1927 /* Homes.json in Resources */ = {isa = PBXBuildFile; fileRef = 00B7A53F207D40C5006C1927 /* Homes.json */; };
-		00FFA469207D7F990024C64E /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFA468207D7F990024C64E /* Budget.storyboard */; };
 		00FFA46A207D7FB40024C64E /* Contractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B8400D20758CA40011D911 /* Contractor.swift */; };
+		1613EDF02087EEFC00C2FF3C /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1613EDEF2087EEFC00C2FF3C /* ItemDetailViewController.swift */; };
 		9400F07B206057CB00676DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400F07A206057CB00676DB9 /* AppDelegate.swift */; };
 		9400F080206057CB00676DB9 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9400F07E206057CB00676DB9 /* TabBar.storyboard */; };
 		9400F082206057CB00676DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9400F081206057CB00676DB9 /* Assets.xcassets */; };
@@ -51,6 +51,7 @@
 		00B7A53D207D40A1006C1927 /* HomeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeStruct.swift; path = ../HomeStruct.swift; sourceTree = "<group>"; };
 		00B7A53F207D40C5006C1927 /* Homes.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = Homes.json; sourceTree = "<group>"; };
 		00FFA468207D7F990024C64E /* Budget.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
+		1613EDEF2087EEFC00C2FF3C /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		9400F077206057CB00676DB9 /* Greenify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greenify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9400F07A206057CB00676DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9400F07F206057CB00676DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
@@ -137,7 +138,6 @@
 				9400F098206467B600676DB9 /* Saved Contractors */,
 				9400F09A206467C700676DB9 /* Available Contractors */,
 				94A0AB162083B3BB008F4054 /* Contractor Detail */,
-				A9BFFADE206C3E2D00A67E5D /* Budget */,
 			);
 			path = Greenify;
 			sourceTree = "<group>";
@@ -156,6 +156,7 @@
 			children = (
 				9400F08E2064628400676DB9 /* Learn.storyboard */,
 				9400F0942064679700676DB9 /* LearnViewController.swift */,
+				1613EDEF2087EEFC00C2FF3C /* ItemDetailViewController.swift */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -207,14 +208,6 @@
 				A9645688208545A200719E5D /* ChooseHomeTableViewController.swift */,
 			);
 			path = ChooseHome;
-			sourceTree = "<group>";
-		};
-		A9BFFADE206C3E2D00A67E5D /* Budget */ = {
-			isa = PBXGroup;
-			children = (
-				00FFA468207D7F990024C64E /* Budget.storyboard */,
-			);
-			path = Budget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +306,6 @@
 				9400F082206057CB00676DB9 /* Assets.xcassets in Resources */,
 				9400F08F2064628400676DB9 /* Learn.storyboard in Resources */,
 				9400F0932064641A00676DB9 /* AvailableContractors.storyboard in Resources */,
-				00FFA469207D7F990024C64E /* Budget.storyboard in Resources */,
 				9400F080206057CB00676DB9 /* TabBar.storyboard in Resources */,
 				9400F08D2064626800676DB9 /* MyHome.storyboard in Resources */,
 				00B7A540207D40C5006C1927 /* Homes.json in Resources */,
@@ -344,6 +336,7 @@
 				A9645689208545A200719E5D /* ChooseHomeTableViewController.swift in Sources */,
 				9400F0952064679700676DB9 /* LearnViewController.swift in Sources */,
 				94B84012207D51D50011D911 /* ContractorsService.swift in Sources */,
+				1613EDF02087EEFC00C2FF3C /* ItemDetailViewController.swift in Sources */,
 				9400F097206467AE00676DB9 /* SavedContractorsViewController.swift in Sources */,
 				A96F4A40207C041800F820B2 /* MyHomeViewController.swift in Sources */,
 				94A0AB1A2083B405008F4054 /* ContractorDetailViewController.swift in Sources */,
