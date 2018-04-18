@@ -133,12 +133,88 @@ struct HomeStruct: Codable
     {
         return getHeatingRatingWeighted() + getCoolingRatingWeighted() + getWaterHeaterRatingWeighted() + getLightingRatingWeighted() + getWasher_DryerWeighted() + getOtherEnergyWeighted() + getFridgeRatingWeighted() + getOvenRatingWeighted()
     }
+    mutating func getAllProblems() -> [ProblemsStruct]
+    {
+        var myStruct:[ProblemsStruct] = [ProblemsStruct]()
+        if HeatingRating < 3
+        {
+            Heating.Rating = HeatingRating
+            myStruct.append(Heating)
+        }
+        if CoolingRating < 3
+        {
+            Cooling.Rating = CoolingRating
+            myStruct.append(Cooling)
+        }
+        if WaterHeaterRating < 3
+        {
+         WaterHeater.Rating = WaterHeaterRating
+            myStruct.append(WaterHeater)
+        }
+        if LightingRating < 3
+        {
+            Lighting.Rating = LightingRating
+            myStruct.append(Lighting)
+        }
+        if Washer_DryerRating < 3
+        {
+            Washer_Dryer.Rating = Washer_DryerRating
+            myStruct.append(Washer_Dryer)
+        }
+        if OtherEnergyRating < 3
+        {
+            OtherEnergy.Rating = OtherEnergyRating
+            myStruct.append(OtherEnergy)
+        }
+        if FridgeRating < 3
+        {
+            Fridge.Rating = FridgeRating
+            myStruct.append(Fridge)
+        }
+        if OvenRating < 3
+        {
+            Oven.Rating = OvenRating
+            myStruct.append(Oven)
+        }
+        if ShowerRating < 3
+        {
+            Shower.Rating = ShowerRating
+            myStruct.append(Shower)
+        }
+        if ToiletsRating < 3
+        {
+            Toilet.Rating = ToiletsRating
+            myStruct.append(Toilet)
+        }
+        if Faucets_SinksRating < 3
+        {
+            Faucets_Sinks.Rating = Faucets_SinksRating
+            myStruct.append(Faucets_Sinks)
+        }
+        if WasherRating < 3
+        {
+            Washer.Rating = WasherRating
+            myStruct.append(Washer)
+        }
+        if LeakRating < 3
+        {
+            Leak.Rating = LeakRating
+            myStruct.append(Leak)
+        }
+        if OtherWaterRating < 3
+        {
+            OtherWater.Rating = OtherWaterRating
+            myStruct.append(OtherWater)
+        }
+        return myStruct
+    }
 }
 
 struct ProblemsStruct: Codable
 {
     var problems: String
     var learn: String
+    var Rating: Double?
 }
 
 func loadJson() -> [HomeStruct]
