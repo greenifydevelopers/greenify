@@ -36,19 +36,33 @@ struct HomeStruct: Codable
     var State: String
     var StateAbr: String
     var HeatingRating: Double
+    var Heating: ProblemsStruct
     var CoolingRating: Double
+    var Cooling: ProblemsStruct
     var WaterHeaterRating: Double
+    var WaterHeater: ProblemsStruct
     var LightingRating: Double
+    var Lighting : ProblemsStruct
     var Washer_DryerRating: Double
+    var Washer_Dryer: ProblemsStruct
     var OtherEnergyRating: Double
+    var OtherEnergy : ProblemsStruct
     var FridgeRating: Double
+    var Fridge: ProblemsStruct
     var OvenRating: Double
+    var Oven: ProblemsStruct
     var ShowerRating: Double
+    var Shower: ProblemsStruct
     var ToiletsRating: Double
+    var Toilet: ProblemsStruct
     var Faucets_SinksRating: Double
+    var Faucets_Sinks: ProblemsStruct
     var WasherRating: Double
+    var Washer: ProblemsStruct
     var LeakRating: Double
+    var Leak: ProblemsStruct
     var OtherWaterRating: Double
+    var OtherWater: ProblemsStruct
     //Returns a formatted version of the Homes full address
     func getFullAddress() -> String
     {
@@ -119,6 +133,13 @@ struct HomeStruct: Codable
         return getHeatingRatingWeighted() + getCoolingRatingWeighted() + getWaterHeaterRatingWeighted() + getLightingRatingWeighted() + getWasher_DryerWeighted() + getOtherEnergyWeighted() + getFridgeRatingWeighted() + getOvenRatingWeighted()
     }
 }
+
+struct ProblemsStruct: Codable
+{
+    var problems: String
+    var learn: String
+}
+
 func loadJson() -> [HomeStruct]
 {
     var Array: [HomeStruct]
