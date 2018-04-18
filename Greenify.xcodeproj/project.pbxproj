@@ -50,7 +50,6 @@
 		001FA83420854ABB005DE35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B7A53D207D40A1006C1927 /* HomeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeStruct.swift; path = ../HomeStruct.swift; sourceTree = "<group>"; };
 		00B7A53F207D40C5006C1927 /* Homes.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = Homes.json; sourceTree = "<group>"; };
-		00FFA468207D7F990024C64E /* Budget.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
 		1613EDEF2087EEFC00C2FF3C /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		9400F077206057CB00676DB9 /* Greenify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greenify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9400F07A206057CB00676DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
