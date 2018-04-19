@@ -18,8 +18,8 @@ class LearnViewController: UIViewController {
         super.viewDidLoad()
         
         homeStruct = (UIApplication.shared.delegate as! AppDelegate).homeStruct
-//        let problems = homeStruct.
-        
+        problems = homeStruct.getAllProblems()
+        problems.sort(by: {Int($0.Rating!) < Int($1.Rating!) })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -44,7 +44,7 @@ extension LearnViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "learnTableCell", for: indexPath)
         
         cell.textLabel?.text = problems[indexPath.row].problems
-        cell.detailTextLabel?.text = "Greenify rating: \(homeStruct.getEnergyRating())"
+        cell.detailTextLabel?.text = "Greenify rating: \(Int(problems[indexPath.row].Rating!))"
         
         return cell
     }

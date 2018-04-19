@@ -12,8 +12,11 @@ class MyHomeViewController: UIViewController {
     @IBOutlet weak var energyRatingView: EnergyRatingView!
     @IBOutlet weak var energyRating: UILabel!
     
-    
-    
+
+    @IBAction func changeAddress(_ sender: Any) {
+        performSegue(withIdentifier: "segueToSelection", sender: self)
+        
+    }
     @IBOutlet weak var addressLabel: UILabel!
     
     @IBOutlet weak var houseBio: UITextView!

@@ -40,7 +40,7 @@ struct HomeStruct: Codable
     var CoolingRating: Double
     var Cooling: ProblemsStruct
     var WaterHeaterRating: Double
-    var WaterHeater: ProblemsStruct
+    var WaterHeaterDscr: ProblemsStruct
     var LightingRating: Double
     var Lighting : ProblemsStruct
     var Washer_DryerRating: Double
@@ -54,7 +54,7 @@ struct HomeStruct: Codable
     var ShowerRating: Double
     var Shower: ProblemsStruct
     var ToiletsRating: Double
-    var Toilet: ProblemsStruct
+    var Toilets: ProblemsStruct
     var Faucets_SinksRating: Double
     var Faucets_Sinks: ProblemsStruct
     var WasherRating: Double
@@ -148,8 +148,8 @@ struct HomeStruct: Codable
         }
         if WaterHeaterRating < 3
         {
-         WaterHeater.Rating = WaterHeaterRating
-            myStruct.append(WaterHeater)
+         WaterHeaterDscr.Rating = WaterHeaterRating
+            myStruct.append(WaterHeaterDscr)
         }
         if LightingRating < 3
         {
@@ -183,8 +183,8 @@ struct HomeStruct: Codable
         }
         if ToiletsRating < 3
         {
-            Toilet.Rating = ToiletsRating
-            myStruct.append(Toilet)
+            Toilets.Rating = ToiletsRating
+            myStruct.append(Toilets)
         }
         if Faucets_SinksRating < 3
         {
