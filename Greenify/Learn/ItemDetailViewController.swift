@@ -15,8 +15,6 @@ class ItemDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         
         detailText.text = textToDisplay
         // Do any additional setup after loading the view.
