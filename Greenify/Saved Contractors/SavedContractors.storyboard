@@ -43,6 +43,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hMu-8g-d5t" kind="show" identifier="showDetails" id="EU6-jq-ew4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -63,10 +66,21 @@
                     <tabBarItem key="tabBarItem" title="Saved Contractors" image="icon-contractor" id="vNU-cq-Q0F"/>
                     <navigationItem key="navigationItem" title="Saved Contractors" id="5wv-KF-7P9"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="IUu-AG-UOt" id="yj8-CJ-zhP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0M8-Pb-wz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="164" y="113"/>
+        </scene>
+        <!--ContractorDetail-->
+        <scene sceneID="vrN-dp-xOv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContractorDetail" id="hMu-8g-d5t" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrq-cL-ayc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="16"/>
         </scene>
         <!--Saved Contractors-->
         <scene sceneID="fqm-fd-OCp">

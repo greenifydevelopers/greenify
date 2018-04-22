@@ -11,6 +11,7 @@ import UIKit
 class AvailableContractorsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     let contractorsService = ContractorsService()
     var contractors = [Contractor]()
     
@@ -23,8 +24,15 @@ class AvailableContractorsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showContractorDetail" {
             if let index = tableView.indexPathForSelectedRow?.row {
-                let dest = segue.destination as! ContractorDetailViewController
-                dest.contractor = contractors[index]
+                let destination = segue.destination as! ContractorDetailViewController
+                destination.name = contractors[index].companyName
+                destination.contact = contractors[index].contactName
+                destination.address = contractors[index].address
+                destination.phoneNumber = contractors[index].contactPhone
+                destination.email = contractors[index].contactEmail
+                destination.website = contractors[index].website
+                destination.blurb = contractors[index].blurb
+                destination.buttonHidden = false
             }
         }
     }
@@ -42,8 +50,8 @@ extension AvailableContractorsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "availableContractorsTableCell", for: indexPath)
         
-        cell.textLabel?.text = contractors[indexPath.row].company_name
-        cell.detailTextLabel?.text = contractors[indexPath.row].email
+        cell.textLabel?.text = contractors[indexPath.row].companyName
+        cell.detailTextLabel?.text = contractors[indexPath.row].contactEmail
         
         return cell
     }

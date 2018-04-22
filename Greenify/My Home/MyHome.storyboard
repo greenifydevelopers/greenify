@@ -117,7 +117,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="changeAddress:" destination="DCj-FT-fc4" eventType="touchUpInside" id="JSd-34-Nn2"/>
-                                            <segue destination="9oq-6f-atX" kind="presentation" identifier="segueToSelection" id="krf-3u-Ih9"/>
+                                            <segue destination="9oq-6f-atX" kind="show" identifier="segueToSelection" id="krf-3u-Ih9"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Greenify_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fGo-J7-Sa4">

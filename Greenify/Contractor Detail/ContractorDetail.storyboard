@@ -106,6 +106,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addContractor:" destination="81u-jJ-5VC" eventType="touchUpInside" id="uDT-2W-Wd3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlo-xp-TCg" userLabel="Underline">
                                 <rect key="frame" x="0.0" y="59" width="320" height="1"/>
@@ -167,6 +170,7 @@
                         <viewLayoutGuide key="safeArea" id="aAE-zg-QoH"/>
                     </view>
                     <connections>
+                        <outlet property="addContractorButton" destination="xvM-Yy-Uf5" id="NxG-nt-889"/>
                         <outlet property="addressLabel" destination="VFB-CQ-iB5" id="dmA-ZR-h5H"/>
                         <outlet property="blurbTextView" destination="LeI-3H-RjN" id="kaC-aq-sFP"/>
                         <outlet property="companyNameLabel" destination="UHQ-5X-9qp" id="hDR-fW-dz1"/>

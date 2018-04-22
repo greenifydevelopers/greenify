@@ -13,11 +13,11 @@ struct ContractorResponse: Codable {
 }
 
 struct Contractor: Codable {
-    let company_name: String
-    let contact_name: String
+    let companyName: String
+    let contactName: String
     let address: String
     let blurb: String
-    let phone_number: String
-    let email: String
+    let contactPhone: String
+    let contactEmail: String
     let website: String
 }
