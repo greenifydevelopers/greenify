@@ -22,6 +22,7 @@ class ContractorDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .never
         setUpContractorInfo()
     }
 }
