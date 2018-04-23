@@ -81,8 +81,8 @@
   "LeakRating": 2,
   "Leak":
   {
-  "problems":"Washer and Dryer",
-  "learn":"Washer is leaking, causing damage to floors"
+  "problems":"Pipes in the crawlspace",
+  "learn":"Pipes in the crawlspace, are leaking slowly forcing more stress on your sub pump."
   },
   "OtherWaterRating": 2,
   "OtherWater":
@@ -175,8 +175,8 @@
   "LeakRating": 2,
   "Leak":
   {
-  "problems":"Washer and Dryer",
-  "learn":"Washer is leaking, causing damage to floors"
+  "problems":"Pipes in the crawlspace",
+  "learn":"Pipes in the crawlspace, are leaking slowly forcing more stress on your sub pump."
   },
   "OtherWaterRating": 2,
   "OtherWater":
@@ -268,8 +268,8 @@
   "LeakRating": 2,
   "Leak":
   {
-  "problems":"Washer and Dryer",
-  "learn":"Washer is leaking, causing damage to floors"
+  "problems":"Pipes in the crawlspace",
+  "learn":"Pipes in the crawlspace, are leaking slowly forcing more stress on your sub pump."
   },
   "OtherWaterRating": 2,
   "OtherWater":
@@ -361,8 +361,8 @@
   "LeakRating": 2,
   "Leak":
   {
-  "problems":"Washer and Dryer",
-  "learn":"Washer is leaking, causing damage to floors"
+  "problems":"Pipes in the crawlspace",
+  "learn":"Pipes in the crawlspace, are leaking slowly forcing more stress on your sub pump."
   },
   "OtherWaterRating": 2,
   "OtherWater":
